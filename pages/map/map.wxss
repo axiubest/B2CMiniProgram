@@ -1,0 +1,39 @@
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.page-body-button {
+  margin-bottom: 30rpx;
+}
+
+.address-add {
+  position: fixed;
+  height: 400rpx;
+  bottom: 20px;
+  margin-left: 10%;
+  width: 80%; 
+  background-color: white;
+}
+
+.address-add image {
+  width: 100%;
+  height: 264rpx;
+}
+
+.address-name {
+  margin-left: 30rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 35rpx;
+  color: black;
+}
+
+.address-detial {
+  float: left;
+  margin-left: 30rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 25rpx;
+  color: gray;
+}

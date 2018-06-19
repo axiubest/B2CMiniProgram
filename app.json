@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/my/my",
+    "pages/address/address-list",
+    "pages/search-detial/search-detial",
+    "pages/new-address/new-address",
+    "pages/map/map",
+    "pages/goods-detail/goods-detail",
+    "pages/shop-cart/shop-cart"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/image/homepage.png",
+        "selectedIconPath": "/image/homepage_fill.png"
+      },
+      {
+        "pagePath": "pages/shop-cart/shop-cart",
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "/image/mine_fill.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "/image/mine_fill.png"
+      }
+    ]
+  }
+}

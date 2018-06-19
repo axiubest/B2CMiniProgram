@@ -1,0 +1,58 @@
+
+@import "../../lib/weui.wxss";
+
+.header-user {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  margin-left: 70rpx;
+  margin-top: 50rpx;
+}
+
+.header-user image {
+   width: 160rpx;
+   height: 160rpx;
+   border-radius: 80rpx;
+   border-color: red;
+   border-width: 4rpx;
+}
+
+.header-user .username {
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+}
+
+
+.row {
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+}
+
+.row-cell {
+  display: flex;
+  flex-direction:row;
+  height: 100rpx;
+  border-color: white;
+  border-bottom-color: #efefef;
+  border-bottom-width: 1rpx;
+  border-style: solid;
+}
+
+.row-cell text {
+  margin-left: 20rpx;
+  line-height: 100rpx;
+  font-family: 'MingLiU';
+  font-size: 30rpx;
+}
+
+.row .row-cell image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 35rpx;
+}
+
+.line {
+  height: 1rpx;
+  width: 100%;
+  background-color: #efefef;
+}

@@ -1,0 +1,29 @@
+.input-v {
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+
+.input-v input {
+  margin-top: 10px;
+  height: 100rpx;
+
+}
+
+.line {
+  width: 90%;
+  background-color: #EDEDED;
+  height: 1px;
+}
+
+.address-add {
+  position: fixed;
+  height: 80rpx;
+  bottom: 20px;
+  margin-left: 20%;
+  width: 60%; 
+  background-color: black;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: white;
+}

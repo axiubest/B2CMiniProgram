@@ -1,0 +1,23 @@
+<view>
+  <text class='title'>Map</text>
+
+
+  <view class="page-section page-section-gap">
+    <map
+      id="myMap"
+      style="width: 100%; height: 470px;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      covers="{{covers}}"
+      show-location
+    ></map>
+  </view>
+
+  <view class='address-add'>
+    <image src="../../image/artificial-photography-119298.png"/>
+    <text class='address-name'>Imba Grand Star Store</text> 
+    <text class='address-detial'>88 Abelardo Village Suite 544</text> 
+  </view>
+
+</view>

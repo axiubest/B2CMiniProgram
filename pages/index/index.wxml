@@ -1,0 +1,100 @@
+<!--index.wxml-->
+
+<!--搜索  -->
+<navigator url='../../pages/search-detial/search-detial' open-type='navigate'>
+  <view class="search-view" wx:if="{{true}}" bindtap="go_search">
+    <text class="search-text">What do you Want to Buy</text>
+    <icon class="search-icon" type="search" size="15" />
+  </view>
+</navigator>
+
+
+
+<!--轮播图  -->
+<view>
+  <swiper indicator-dots="true" autoplay="true" duration="1000">
+     <swiper-item>
+        <image src="../../image/banner kids.png" class='slide-image'/>
+     </swiper-item>
+     <swiper-item>
+        <image src="../../image/banner men.png" class='slide-image'/>
+     </swiper-item>
+     <swiper-item>
+        <image src="../../image/banner women.png" class='slide-image'/>
+     </swiper-item>
+  </swiper>
+</view>
+
+<view class='telegory'>
+  <text>Shop By Categories</text>
+</view>
+
+
+<!--分类  -->
+<view class="top-grid-menu">
+  <navigator class="grid-item" url="" open-type="">
+    <image class="grid-icon" src="../../image/segment-1.png"></image>
+    <text class="grid-title">Men's\nFashion</text>
+  </navigator>
+  <navigator class="grid-item" url="" open-type="">
+    <image class="grid-icon" src="../../image/segment-2.png"></image>
+    <text class="grid-title">Women's\nFashion</text>
+  </navigator>
+  <navigator class="grid-item" url="" open-type="">
+    <image class="grid-icon" src="../../image/segment-3.png"></image>
+    <text class="grid-title">Website &\nAndrold</text>
+  </navigator>
+  <navigator class="grid-item" url="" open-type="">
+    <image class="grid-icon" src="../../image/segment-4.png"></image>
+    <text class="grid-title">All\nCategories</text>
+  </navigator>
+
+</view> 
+
+
+<!--瀑布流  -->
+<view class="content">
+  <view class="left">
+    <block wx:for="{{note}}" wx:key="">
+      <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+    </block>
+  </view>
+  <view class="right">
+    <block wx:for="{{note}}" wx:key="">
+      <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+    </block>
+  </view>
+</view>
+
+
+<!--Map  -->
+<navigator url='../../pages/map/map'>
+  <view class='map'>
+    <image src='../../image/store_map.png' mode="widthFix"></image> 
+  </view>
+</navigator>
+
+
+
+<!--  模块引用 -->
+<template name="item">
+<!--跳转到商品详情  -->
+<navigator url="../../pages/goods-detail/goods-detail">
+
+  <view class="item">
+    <image class="item-img" src="{{url}}" mode="widthFix"></image>
+    <view class="item-title-box">
+      <navigator class="item-title">{{title}}</navigator> 
+      <!-- <image class="arrow" src="../../image/arrow.png"></image>   -->
+    </view>
+    <view class="name">
+      <image class="item-ava" src="{{avatar}}"></image>    
+      <text class="name-title">{{name}}</text>
+      <view class="heart_">
+        <!-- <image class="heart" src="../../image/heart.png"></image> -->
+        <text>{{heart_num}}</text>
+      </view>
+    </view>
+  </view>
+</navigator>
+</template>

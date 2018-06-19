@@ -1,0 +1,45 @@
+<view>
+<!--标题  -->
+ <text class='title'>Deals</text>
+
+ <view class='list'>
+    <view class='cell'>
+       <image src='../../image/img1.png'></image>
+       <view class='cell_text'>
+         <view class='tag'>-30%</view>
+         <view class='cell_text_title'>Lasik Eye Surgery Are You Ready</view>
+         <view class='cell_text_time'>05-07-2017</view>
+       </view>
+    </view>
+
+    <view class='cell'>
+       <image src='../../image/img2.png'></image>
+       <view class='cell_text'>
+         <view class='tag'>-30%</view>
+         <view class='cell_text_title'>Lasik Eye Surgery Are You Ready</view>
+         <view class='cell_text_time'>05-07-2017</view>
+       </view>
+    </view>
+
+    <view class='cell'>
+       <image src='../../image/img3.png'></image>
+       <view class='cell_text'>
+         <view class='tag'>-30%</view>
+         <view class='cell_text_title'>Lasik Eye Surgery Are You Ready</view>
+         <view class='cell_text_time'>05-07-2017</view>
+       </view>
+    </view>
+
+    <view class='cell'>
+       <image src='../../image/img4.png'></image>
+       <view class='cell_text'>
+         <view class='tag'>-30%</view>
+         <view class='cell_text_title'>Lasik Eye Surgery Are You Ready</view>
+         <view class='cell_text_time'>05-07-2017</view>
+       </view>
+    </view>
+ </view>
+
+
+
+</view>

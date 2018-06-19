@@ -1,0 +1,189 @@
+.goods_swiper {
+
+}
+
+.goods_swiper swiper {
+  height: 750rpx;
+}
+
+.goods_swiper swiper swiper-item {
+  height: 750rpx;
+}
+
+.goods_swiper swiper swiper-item image {
+  width: 100%;
+  height: 750rpx;
+}
+
+
+ /* --操作按钮 喜欢 播放视频 分享  */
+.toor_bar {
+  width: 100%;
+  height: 88rpx;
+  background-color: #E8E8E8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toor_bar .toor_bar_button {
+  width: 33%;
+  height: 86rpx;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toor_bar .toor_bar_button image {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods_detail {
+  margin: 20rpx 60rpx 48rpx 20rpx;
+  height: 10px;
+}
+
+.goods_name {
+  margin-left: 10rpx;
+  word-break:break-all;
+  float: left;
+  width: 450rpx;
+  
+  font-size: 14px;
+  color: #121314;
+}
+
+.goods_price {
+  float: right;
+  font-size: 16px;
+}
+
+.line {
+  clear:both;
+  margin-top: 40px;
+  height: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #efefef;
+}
+
+/*尺码  */
+
+.size {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.size_title {
+  margin-left: 5rpx;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.size_type {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.size_type_detail {
+
+  width: 200rpx;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: center;
+  margin: 20rpx 10rpx 20rpx 20rpx;
+}
+
+.size_type_detail button {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+}
+
+.selectColor {
+  background-color: black;
+  color: white;
+}
+
+.unSelectColor {
+  background-color: white;
+  color:black;
+}
+
+.you_like {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+
+
+.zan-body {
+  margin-top: 20rpx;
+  display: flex;
+}
+.zan-empty{
+  text-align: center;
+  line-height: 90rpx;
+  color: #999999;
+}
+.zan-user-list{
+  display: flex;
+  margin:0 22rpx;
+}
+
+.zan-user-list .user-info {
+  width: 144px;
+  height: 240px;
+  padding-right: 15px;
+}
+
+.zan-user-list .user-info .user-avatar {
+  width: 144px;
+  height: 184px;
+}
+
+.zan-user-list .user-info .like-goods-info {
+  /* display: flex; */
+  color: gray;
+  /* justify-content: center; */
+  font-size: 10px;
+  text-align: center;
+  width: 144px;
+  height: 30px;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 2; /** 显示的行数 **/
+  overflow: hidden;  /** 隐藏超出的内容 **/
+}
+.zan-user-list .user-info .like-goods-price {
+  width: 144px;
+  background-color: white;
+}
+
+
+/*商品详情  */
+
+.goods-detail {
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.detail-img {
+  /* margin-left: 10px;
+  margin-right: 10px; */
+}
+
+.detail-img image {
+  width: 100%;
+}

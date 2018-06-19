@@ -1,0 +1,42 @@
+
+<view class="">
+
+<!--用户信息（头部）  -->
+  <view class='header-user'>
+   <image src='../../image/header-logo.png'></image>
+   <text class='username'>john Doe</text>
+  </view>
+
+
+  <view class='row'>
+    <view class='line'></view>
+
+    <view class='row-cell'>
+      <image src='../../image/ic_heart@3x.png'></image>
+      <text>Notification </text>
+    </view>
+
+    <view class='row-cell'>
+      <image src='../../image/ic_heart@3x.png'></image>
+      <text>My Order </text>
+    </view>
+    
+      <view class='row-cell' bindtap='click_address' >
+        <image src='../../image/ic_heart@3x.png'></image>
+        <text>Address </text>
+      </view>
+
+
+
+    <view class='row-cell'>
+      <image src='../../image/ic_heart@3x.png'></image>
+      <text>Payment </text>
+    </view>
+
+    <view class='row-cell'>
+      <image src='../../image/ic_heart@3x.png'></image>
+      <text>Wish List </text>
+    </view>
+
+  </view>
+</view>

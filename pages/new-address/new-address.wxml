@@ -1,0 +1,21 @@
+<view>
+  <text class='title'>New Address</text>
+  <view class='input-v'>
+    <form>
+      <input placeholder='name'></input>
+      <view class='line'></view>
+      <input placeholder='Street Address'></input>
+      <view class='line'></view>
+      <input placeholder='State'></input>
+      <view class='line'></view>
+      <input placeholder='Phone Number'></input>
+      <view class='line'></view>
+    </form>
+  </view>
+
+  <navigator open-type='navigateBack'>
+    <view class='address-add'>SUBMIT</view>
+  </navigator>
+
+</view>
+

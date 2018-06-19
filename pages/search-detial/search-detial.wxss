@@ -1,0 +1,52 @@
+
+.list {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.list .cell image {
+  width: 140px;
+  height: 140px;
+  position:absolute;
+}
+
+.cell {
+  position: relative;
+  height: 160px;
+}
+
+.cell_text {
+  margin-top: 10px;
+  position:absolute;
+  margin-left: 130px;
+  background-color: white;
+  height: 120px;
+  border-radius: 3px;
+}
+
+.tag {
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.cell_text_title {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 50px;
+}
+
+.cell_text_time {
+  font-size: 12px;
+  color: gray;
+  margin-left: 10px;
+}

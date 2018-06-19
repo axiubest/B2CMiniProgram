@@ -1,0 +1,83 @@
+<view>
+  <!--轮播图  -->
+  <view class='goods_swiper'>
+    <swiper indicator-dots="true" autoplay="true" duration="1000">
+      <swiper-item>
+          <image  src="../../image/goods-detail/TB2KJ7mrGmWBuNjy1XaXXXCbXXa_!!1605905120.jpg"/>
+      </swiper-item>
+      <swiper-item>
+          <image  src="../../image/goods-detail/TB2QDxrgfiSBuNkSnhJXXbDcpXa_!!1605905120.jpg"/>
+      </swiper-item>
+      <swiper-item>
+          <image  src="../../image/goods-detail/TB2xZ1Vd79WBuNjSspeXXaz5VXa_!!1605905120.jpg"/>
+      </swiper-item>
+      <swiper-item>
+          <image  src="../../image/goods-detail/TB24IKJrMmTBuNjy1XbXXaMrVXa_!!1605905120.jpg"/>
+      </swiper-item>
+      <swiper-item>
+          <image  src="../../image/goods-detail/TB2PfhgbGagSKJjy0FhXXcrbFXa_!!195434695.png"/>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!--操作按钮 喜欢 播放视频 分享  -->
+  <view class='toor_bar'>
+    <view class='toor_bar_button'><image mode='aspectFill' src='../../image/ic_like.png'></image></view>
+    <view class='toor_bar_button'><image src='../../image/ic_vidio.png'></image></view>
+    <view class='toor_bar_button'><image src='../../image/ic_share.png'></image></view>
+  </view>
+
+  <!--商品名称价格  -->
+
+  <view class='goods_detail'>
+    <text class='goods_name'>Mini Cami Skater Dress in Rib </text>
+    <text class='goods_price'>$19.99</text>
+  </view>
+  <view class='line'></view>
+
+
+<!--尺码  -->
+  <view class='size'>
+    <text class='size_title'>SIZE</text>
+    <view class='size_type'>
+      <view class='size_type_detail'><button>S</button></view>
+      <view class='size_type_detail'><button>L</button></view>
+      <view class='size_type_detail'><button>XL</button></view>
+      <view class='size_type_detail'><button>XXL</button></view>
+    </view>
+  </view>
+
+<!--颜色  -->
+  <view class='size'>
+    <text class='size_title'>颜色</text>
+    <view class='size_type' >
+      <view wx:for="{{clothes_size}}" wx:key="{{item}}" id='{{item}}' bindtap="choseTxtColor" class='size_type_detail'><button class="{{clothes_type[index]?'selectColor' : 'unSelectColor'}}">{{item}}</button></view>
+    </view>
+  </view>
+
+
+<!--猜你喜欢  -->
+<view class='division'></view>
+  <view class='you_like'>
+    <text>May you like it</text>
+    <view class="zan-body">
+      <scroll-view class="zan-user-list-sv" scroll-x="true">
+        <view class="zan-user-list" >
+          <view class="user-info" wx:for="{{you_like_item}}" wx:key="{{item}}">
+            <image class="user-avatar" src='{{item}}'></image>
+            <text class='like-goods-info'>Length Tent DressLength Tent DressLength Tent DressDressLength</text>
+            <text class='like-goods-price'>¥12.83</text> 
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  
+
+<!--商品详情  -->
+<view class='division'></view>
+<text class='goods-detail'>- Goods Detail -</text>
+<view class='detail-img' wx:for="{{img_item}}" wx:key="{{item}}">
+  <image mode='widthFix'  src='{{item}}'></image>
+</view>
+</view>

@@ -1,0 +1,44 @@
+<view>
+  <view class='row'>
+
+    <view class='row-cell'>
+      <view class='address-name'>
+        <text>Address Name #01Address Name #01Address Name #01</text>
+        <button>Edit</button>
+      </view>
+      <text class='address-detail'>132 Considine Gateway Apt. 510</text>
+      <text class='address-detail'>091 234 5678</text>
+    </view>
+
+    <view class='row-cell'>
+      <view class='address-name'>
+        <text>Address Name #01Address</text>
+        <button>Edit</button>
+      </view>
+      <text class='address-detail'>132 Considine Gateway Apt. 510</text>
+      <text class='address-detail'>091 234 5678</text>
+    </view>
+
+    <view class='row-cell'>
+      <view class='address-name'>
+        <text>Address Name #01Address</text>
+        <button>Edit</button>
+      </view>
+      <text class='address-detail'>132 Considine Gateway Apt. 510</text>
+      <text class='address-detail'>091 234 5678</text>
+    </view>
+
+  </view>
+
+
+
+  <navigator bindtap='navigate' url='../../pages/new-address/new-address'>
+    <view class='address-add'>
+      <image src="../../image/add_address_btn.png"/>
+      <text>Add New Address</text> 
+    </view>
+  </navigator>
+
+  
+
+</view>
