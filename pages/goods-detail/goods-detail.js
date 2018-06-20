@@ -5,6 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    goods_swiper: ['../../image/goods-detail/TB2KJ7mrGmWBuNjy1XaXXXCbXXa_!!1605905120.jpg', 
+                   '../../image/goods-detail/TB2QDxrgfiSBuNkSnhJXXbDcpXa_!!1605905120.jpg',
+                   '../../image/goods-detail/TB2xZ1Vd79WBuNjSspeXXaz5VXa_!!1605905120.jpg',
+                   '../../image/goods-detail/TB24IKJrMmTBuNjy1XbXXaMrVXa_!!1605905120.jpg',
+                   '../../image/goods-detail/TB2PfhgbGagSKJjy0FhXXcrbFXa_!!195434695.png' 
+    ],
     img_item: [ '../../image/goods-detail/model1/53434.png',
                 '../../image/goods-detail/model1/112312.png',
                 '../../image/goods-detail/model1/564756.png',
@@ -59,6 +65,20 @@ Page({
   onLoad: function (options) {
   
   },
+
+  //图片点击事件
+  imgYu: function (e) {
+    var that = this,
+       //获取当前图片的下表
+    index = e.currentTarget.dataset.index
+    console.log(index),
+    //图片预览
+    wx.previewImage({
+      current: this.data.goods_swiper[index],
+      urls: this.data.goods_swiper // 需要预览的图片http链接列表
+    })
+  },
+
 
   choseTxtColor: function(e) {
     

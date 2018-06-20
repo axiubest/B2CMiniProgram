@@ -2,7 +2,7 @@
 
 <!--搜索  -->
 <navigator url='../../pages/search-detial/search-detial' open-type='navigate'>
-  <view class="search-view" wx:if="{{true}}" bindtap="go_search">
+  <view class="search-view" wx:if="{{true}}">
     <text class="search-text">What do you Want to Buy</text>
     <icon class="search-icon" type="search" size="15" />
   </view>

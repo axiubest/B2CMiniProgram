@@ -2,21 +2,10 @@
   <!--轮播图  -->
   <view class='goods_swiper'>
     <swiper indicator-dots="true" autoplay="true" duration="1000">
-      <swiper-item>
-          <image  src="../../image/goods-detail/TB2KJ7mrGmWBuNjy1XaXXXCbXXa_!!1605905120.jpg"/>
+      <swiper-item wx:for="{{goods_swiper}}" wx:key="{{item}}">
+          <image data-index="{{index}}" bindtap="imgYu"  src="{{item}}"/>
       </swiper-item>
-      <swiper-item>
-          <image  src="../../image/goods-detail/TB2QDxrgfiSBuNkSnhJXXbDcpXa_!!1605905120.jpg"/>
-      </swiper-item>
-      <swiper-item>
-          <image  src="../../image/goods-detail/TB2xZ1Vd79WBuNjSspeXXaz5VXa_!!1605905120.jpg"/>
-      </swiper-item>
-      <swiper-item>
-          <image  src="../../image/goods-detail/TB24IKJrMmTBuNjy1XbXXaMrVXa_!!1605905120.jpg"/>
-      </swiper-item>
-      <swiper-item>
-          <image  src="../../image/goods-detail/TB2PfhgbGagSKJjy0FhXXcrbFXa_!!195434695.png"/>
-      </swiper-item>
+
     </swiper>
   </view>
 
